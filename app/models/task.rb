@@ -3,9 +3,11 @@ class Task < ApplicationRecord
 
     private 
 
-    def calc_time_diff 
+    def calc_time_diff       
         prev_task = Task.where( "id < ?", id ).last
-        prev_task.update(time_spent: self.created_at - prev_task.created_at)
+        if prev_task
+            prev_task.update(time_spent: self.created_at - prev_task.created_at)
+        end 
     end 
 
 end
