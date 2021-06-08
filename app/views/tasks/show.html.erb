@@ -1,23 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @task.description %>
-</p>
-
-<p>
-  <strong>Comment:</strong>
-  <%= @task.comment %>
-</p>
-
-<p>Date: <%= @task.created_at.strftime("%m/%d/%Y") %></p>
-
-<p>Time: <%= @task.created_at.strftime("%I:%M%p") %></p>
-
-<p>
-  <strong>Time Spent:</strong>
-  <%= @task.time_spent %>
-</p>
+<p><strong>Description: </strong><%= @task.description %></p>
+<p><strong>Comment: </strong><%= @task.comment %></p>
+<p><strong>Date: </strong><%= @task.created_at.strftime("%m/%d/%Y") %></p>
+<p><strong>Time: </strong><%= @task.created_at.strftime("%I:%M%p") %></p>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>

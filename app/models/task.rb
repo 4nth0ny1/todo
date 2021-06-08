@@ -1,6 +1,8 @@
 class Task < ApplicationRecord
     after_create :calc_time_diff 
 
+    has_one :worktype
+
     private 
 
     def calc_time_diff       
