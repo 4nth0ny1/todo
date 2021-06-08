@@ -35,3 +35,10 @@
     line-height: 35px;
     border-bottom: 1px solid #b4b6b8;
 }
+
+.accordion-button, .accordion-item, .accordion-header {
+    background: #313639;
+    color: #b4b6b8;
+    border-right: 1px solid #b4b6b8;
+    box-shadow: 1px 1px 1px 1px #b4b6b8;
+}
